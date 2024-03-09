@@ -1,12 +1,15 @@
 import getAllPosts from "@/lib/getAllPosts";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/ui/button"
 
 export default async function Home() {
 
   const posts = await getAllPosts();
   return (
     <main className="container mx-auto mt-4 h-screen">
+      <Button variant="outline">Button</Button>
+
       <div className="grid grid-cols-4 gap-2">
         {/* post 1 */}
         
